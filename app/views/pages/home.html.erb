@@ -4,8 +4,8 @@
     <div class="card_list">
       <% @cocktails.each do |cocktail| %>
         <%= link_to cocktail_path(cocktail) do %>
-          <div class="card_category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('')">
-            <%= cocktail.name %>
+          <div class="card_category">
+            <h1 id= "cocktail-name"><%= cocktail.name %></h1>
           </div>
         <% end %>
       <% end %>

@@ -2,12 +2,38 @@
   display: grid;
   height: 100vh;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  a{
+    height: 40vh;
+    width: 300px;
+  }
 }
 
 .card_category{
-  background-color: aqua;
   display: grid;
-  place-items: center;
+  height: 40vh;
+  background-image: url(https://images.unsplash.com/photo-1517087209106-3f42cd661afa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#cocktail-name{
+  background-color: rgb(56, 56, 56);
+  height: 3vh;
+  text-align: center;
+  position: relative;
+  top: 95%;
+  font-size: 1em;
+  color: rgb(228, 228, 228);
+  font-weight: lighter;
+  margin: none;
+  // text-decoration: none;
+}
+
+#cocktail-name:hover{
+  // font-size: 2em;
+  text-decoration: none;
 }
