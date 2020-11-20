@@ -1,14 +1,14 @@
-<div class="container mt-5">
-  <h1>Welcome to Mister cocktail application</h1>
-  <%= link_to "Create a cocktail", new_cocktail_path %>
-
-  <div class="cards mt-5 flex-grow-1">
-    <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail_path(cocktail) do %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('')">
-          <%= cocktail.name %>
-        </div>
+<%= render 'shared/banner' %>
+<div class="stuff_container">
+  <div class="card_container">
+    <div class="card_list">
+      <% @cocktails.each do |cocktail| %>
+        <%= link_to cocktail_path(cocktail) do %>
+          <div class="card_category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('')">
+            <%= cocktail.name %>
+          </div>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </div>
